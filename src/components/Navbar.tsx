@@ -1,4 +1,4 @@
-import '../styles/Navbar.css';
+import '../styles/navbar.css';
 
 export default function Navbar() {
     return (
@@ -7,9 +7,9 @@ export default function Navbar() {
                 <h1>Peter Huff</h1>
             </div>
             <div className="Links">
-                <p>A</p>
-                <p>B</p>
-                <p>C</p>
+                <p>About</p>
+                <p>Projects</p>
+                <p>Contact</p>
             </div>
         </div>
     );
