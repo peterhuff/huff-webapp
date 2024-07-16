@@ -7,6 +7,18 @@
 }
 
 .Links {
+    list-style: none;
     display: flex;
     gap: 1.5rem;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+

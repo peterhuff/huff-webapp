@@ -6,11 +6,19 @@ export default function Navbar() {
             <div className="Title">
                 <h1>Peter Huff</h1>
             </div>
-            <div className="Links">
-                <p>About</p>
-                <p>Projects</p>
-                <p>Contact</p>
-            </div>
+            <nav>
+                <menu className="Links">
+                    <li>
+                        <a href={'/'}>About</a>
+                    </li>
+                    <li>
+                        <a href={'/projects'}>Projects</a> 
+                    </li>
+                    <li>
+                        <a href={'/contact'}>Contact</a> 
+                    </li>
+                </menu>
+            </nav>
         </div>
     );
 }
