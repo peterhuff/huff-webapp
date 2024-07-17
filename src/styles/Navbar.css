@@ -1,17 +1,26 @@
 .Navbar {
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    border: 1px solid black;
     position: fixed;
+    top: 0;
+    height: 4rem;
+    width: 100%;
+    background-color: black;;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Links {
     list-style: none;
+    width: 20rem;
     display: flex;
-    gap: 1.5rem;
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    flex: 1;
 }
 
 a {
