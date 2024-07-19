@@ -1,4 +1,6 @@
 import '../styles/profile.css';
+import github from "../images/github.svg"
+import linkedin from "../images/linkedin.png"
 
 export default function Profile () {
     return(
@@ -26,6 +28,23 @@ export default function Profile () {
                     <li>Linux</li>
                     <li>AWS</li>
                     <li>Firebase</li>
+                </ul>
+            </div>
+            <div className="social">
+                <h3>Social</h3>
+                <ul className="social-list">
+                    <li>
+                        <a href="https://github.com/peterhuff" target="_blank" rel="noopener noreferrer">
+                            <img src={github} alt="Github logo" className="social-icon" id="github-icon"/>
+                            <span>Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/peter-huff-58450a202/" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedin} alt="Linkedin logo" className="social-icon" id="linkedin-icon"/>
+                            <span>Linkedin</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

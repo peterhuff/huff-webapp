@@ -19,13 +19,14 @@
     padding: 0;
 }
 
-li {
+.Navbar li {
     flex: 1;
 }
 
-a {
+.Navbar a {
     color: white;
     text-decoration: none;
+    width: min-content;
 }
 
 .Links a:hover {

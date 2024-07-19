@@ -1,20 +1,35 @@
-#profile {
+.content-box{
+    max-width: 50rem;
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+#profile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     text-align: left;
-    border: none;
 }
 
 .about-me h2 {
     margin: 0;
 }
 
-.skills h3 {
+#profile h3 {
     margin: 0;
+}
+
+#profile ul {
+    margin-top: 0.5rem;
+}
+
+#profile a {
+    color: white;
+}
+
+#profile a:hover {
+    color: gray;
 }
 
 .skills-list {
@@ -31,3 +46,42 @@
     flex: 0;
 }
 
+.social-list {
+    padding: 0;
+    list-style: none;
+}
+
+.social-list li {
+    margin: 0.5rem 0;
+}
+
+.social-list a {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .25rem;
+}
+
+.social-icon {
+    height: 1rem;
+    color: white;
+}
+
+@media (min-width: 768px){
+    #profile {
+        display: grid;
+        border: none;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .about-me {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        align-self: center;
+    }
+
+    .skills {
+        align-self: end;
+    }
+}
