@@ -1,50 +1,24 @@
-.content-box{
-    max-width: 60rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
 #frontpage {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: flex-start;
-    gap: 1rem;
+    /* gap: 1rem; */
     text-align: left;
     border: none;
 }
 
-.title {
-    margin-top: 2rem;
-}
-
-.title h1 {
-    font-size: 4rem;
-    margin: 1rem 0;
-}
-
 .title h2 {
-    font-size: 2rem;
     color: rgb(184, 184, 184);
 }
 
-.info h2 {
+.info h3 {
     margin: 0;
 }
 
-.about-me h2 {
+.about-me h3 {
     text-decoration: underline;
-}
-
-.about-me p {
-    font-size: 1.2rem;
-}
-
-.data h3 {
-    margin: 0;
-}
-
-.data ul {
-    margin-top: 0.5rem;
+    font-size: 1.25rem;
 }
 
 .data a {
@@ -58,7 +32,7 @@
 .data {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .data a:hover {
@@ -81,7 +55,11 @@
 
 .social-list {
     padding: 0;
+    margin: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
 }
 
 .social-list li {
@@ -96,16 +74,57 @@
 }
 
 .social-icon {
-    height: 1rem;
+    height: 2rem;
     color: white;
 }
 
+.view-portfolio {
+    display: none;
+}
+
 @media (min-width: 768px){
+    .title h1 {
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+        color: rgb(184, 184, 184);
+    }
+
     .info {
+        /* width: 90%; */
         display: grid;
         border: none;
         grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
+        gap: 3rem;
     }
+
+    .info h3 {
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+    .about-me p {
+        font-size: 1.2rem;
+    }
+
+    .data {
+        gap: 1rem;
+    }
+
+    .view-portfolio {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid white;
+        padding: .5rem 1rem;
+        background-color: black;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    
 
 }

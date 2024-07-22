@@ -1,6 +1,7 @@
 import '../styles/profile.css';
 import github from "../images/github.svg"
-import linkedin from "../images/linkedin.png"
+import linkedin from "../images/linkedin34.png"
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Profile () {
     return(
@@ -11,7 +12,7 @@ export default function Profile () {
             </div>
             <div className="info">
                 <div className="about-me">
-                    <h2>About Me</h2>
+                    <h3>About Me</h3>
                     <p>
                         Hi, I'm Peter. I studied at Washington University in St. Louis and graduated in 2023 with a BS in computer science.
                         I have a passion for addresing problems with creative, efficient solutions.
@@ -38,7 +39,7 @@ export default function Profile () {
                         </ul>
                     </div>
                     <div className="social">
-                        <h3>Social</h3>
+                        {/* <h3>Social</h3> */}
                         <ul className="social-list">
                             <li>
                                 <a href="https://github.com/peterhuff" target="_blank" rel="noopener noreferrer">
@@ -56,6 +57,9 @@ export default function Profile () {
                     </div>
                 </div>
             </div>
+            <AnchorLink className="view-portfolio" offset="64" href="#projects">
+                View Portfolio &#8595;
+            </AnchorLink>
         </div>
     );
 }
