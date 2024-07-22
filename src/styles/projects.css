@@ -17,6 +17,10 @@
 }
 
 @media (min-width: 768px){
+    #projects {
+        margin-top: 3rem;
+    }
+
     .projects-box {
         width: 80%;
         margin: 0 auto;

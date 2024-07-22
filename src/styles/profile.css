@@ -1,9 +1,7 @@
 #frontpage {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: flex-start;
-    /* gap: 1rem; */
     text-align: left;
     border: none;
 }
@@ -83,6 +81,10 @@
 }
 
 @media (min-width: 768px){
+
+    #frontpage {
+        justify-content: space-evenly;
+    }
     .title h1 {
         font-size: 4rem;
         margin: 1rem 0;
