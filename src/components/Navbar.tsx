@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav className="Navbar">
             <menu className="Links">
                 <li>
-                    <AnchorLink offset="64" href="#profile">Profile</AnchorLink>
+                    <AnchorLink offset="64" href="#frontpage">Profile</AnchorLink>
                 </li>
                 <li>
                     <AnchorLink offset="64" href="#projects">Projects</AnchorLink>

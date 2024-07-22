@@ -1,34 +1,67 @@
 .content-box{
-    max-width: 50rem;
+    max-width: 60rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
-#profile {
+#frontpage {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     text-align: left;
+    border: none;
+}
+
+.title {
+    margin-top: 2rem;
+}
+
+.title h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.title h2 {
+    font-size: 2rem;
+    color: rgb(184, 184, 184);
+}
+
+.info h2 {
+    margin: 0;
 }
 
 .about-me h2 {
+    text-decoration: underline;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+}
+
+.data h3 {
     margin: 0;
 }
 
-#profile h3 {
-    margin: 0;
-}
-
-#profile ul {
+.data ul {
     margin-top: 0.5rem;
 }
 
-#profile a {
+.data a {
     color: white;
 }
 
-#profile a:hover {
+.about-me a:visited {
+    color: white;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data a:hover {
     color: gray;
 }
 
@@ -37,8 +70,8 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: .5rem;
+    justify-content: flex-start;
+    gap: .5rem 1rem;
 }
 
 .skills-list li {
@@ -68,20 +101,11 @@
 }
 
 @media (min-width: 768px){
-    #profile {
+    .info {
         display: grid;
         border: none;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        gap: 0.5rem;
     }
 
-    .about-me {
-        grid-column: 1;
-        grid-row: 1 / span 2;
-        align-self: center;
-    }
-
-    .skills {
-        align-self: end;
-    }
 }
