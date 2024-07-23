@@ -15,7 +15,7 @@ export default function Profile () {
                     <h3>About Me</h3>
                     <p>
                         Hi, I'm Peter. I studied at Washington University in St. Louis and graduated in 2023 with a BS in computer science.
-                        I have a passion for addresing problems with creative, efficient solutions.
+                        I have a passion for addressing problems with creative, efficient solutions.
                         I have experience developing a variety of applications, and I'm always looking to expand my skill set.
                     </p>
                 </div>
